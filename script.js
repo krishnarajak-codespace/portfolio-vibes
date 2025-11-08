@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', setActive);
   }
 
+
   // ===== Mobile Nav Toggle =====
   const toggle = document.querySelector('.nav-toggle');
   const nav = document.querySelector('.nav');

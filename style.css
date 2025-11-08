@@ -660,3 +660,54 @@ backdrop-filter: blur(8px);
   transform: scale(1.2);
   color: #00ffcc;
 }
+
+/* Make the navbar and mobile menu responsive:*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #111;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 200px;
+  padding: 1rem;
+}
+
+.mobile-menu a {
+  color: white;
+  padding: 0.5rem 0;
+  text-decoration: none;
+}
+
+/* Responsive Breakpoint */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .mobile-menu.show {
+    display: flex;
+  }
+}
