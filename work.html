@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work | Krishna Rajak</title>
+
+  <!-- Devicon Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ========= Base & Reset ========= */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #dce3f0;
+      background: radial-gradient(circle at top left, #0b1221, #0f172a);
+      overflow-x: hidden;
+      min-height: 100vh;
+      animation: fadeIn 1s ease both;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ========= Navbar ========= */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 3rem;
+      background: rgba(15, 23, 42, 0.7);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      color: #dce3f0;
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #dce3f0;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #60a5fa;
+    }
+
+    .resume-btn {
+      padding: 0.6rem 1.2rem;
+      background: linear-gradient(90deg, #4f46e5, #3b82f6);
+      color: white;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .resume-btn:hover {
+      background: linear-gradient(90deg, #6366f1, #2563eb);
+      transform: translateY(-2px);
+    }
+
+    /* ========= Section Title ========= */
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-top: 3rem;
+      margin-bottom: 2rem;
+      position: relative;
+    }
+
+    .section-title::after {
+      content: "";
+      position: absolute;
+      width: 70px;
+      height: 4px;
+      background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 4px;
+    }
+
+    /* ========= Work Cards ========= */
+    .work-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.8rem;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .work-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .work-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 6px 25px rgba(59,130,246,0.25);
+    }
+
+    .work-card h3 {
+      color: #60a5fa;
+      font-size: 1.3rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .work-card p {
+      color: #aeb7c6;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    /* ========= Skills ========= */
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+
+    .skill {
+      background: rgba(255,255,255,0.08);
+      border-radius: 8px;
+      padding: 0.4rem 0.8rem;
+      font-size: 0.85rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.3s ease;
+    }
+
+    .skill i {
+      font-size: 1.2rem;
+    }
+
+    .skill:hover {
+      background: rgba(59,130,246,0.25);
+      transform: scale(1.05);
+    }
+
+    /* ========= Footer ========= */
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      color: #94a3b8;
+      font-size: 0.9rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      margin-top: 3rem;
+      background: rgba(15, 23, 42, 0.6);
+    }
+
+    footer span {
+      color: #60a5fa;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ===== Navbar ===== -->
+  <nav>
+    <div class="logo">KR</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+      <a href="work.html" class="active">Work</a>
+    </div>
+    <a href="RESUME_OCT.pdf" class="resume-btn">Resume</a>
+  </nav>
+
+  <!-- ===== Work Section ===== -->
+  <section>
+    <h2 class="section-title">Work Experience</h2>
+
+    <div class="work-container">
+
+      <div class="work-card">
+        <h3>Editkaro.in – Web Developer Intern</h3>
+        <p>Developed a full-featured responsive website for a video editing & social media agency, integrated Google Sheets for contact forms, and optimized the portfolio section.</p>
+        <div class="skills">
+          <div class="skill"><i class="devicon-html5-plain colored"></i>HTML</div>
+          <div class="skill"><i class="devicon-css3-plain colored"></i>CSS</div>
+          <div class="skill"><i class="devicon-javascript-plain colored"></i>JavaScript</div>
+          <div class="skill"><i class="devicon-wordpress-plain colored"></i>WordPress</div>
+        </div>
+      </div>
+
+      <div class="work-card">
+        <h3>Bharat Intern – Web Development Intern</h3>
+        <p>Completed a virtual internship creating projects such as a temperature converter and calculator, learning the core concepts of web responsiveness and DOM manipulation.</p>
+        <div class="skills">
+          <div class="skill"><i class="devicon-html5-plain colored"></i>HTML</div>
+          <div class="skill"><i class="devicon-css3-plain colored"></i>CSS</div>
+          <div class="skill"><i class="devicon-javascript-plain colored"></i>JavaScript</div>
+          <div class="skill"><i class="devicon-github-original colored"></i>GitHub</div>
+        </div>
+      </div>
+
+      <div class="work-card">
+        <h3>Freelance Projects</h3>
+        <p>Developed multiple small business websites using Shopify & WordPress, ensuring client satisfaction through creative UI/UX and fast performance.</p>
+        <div class="skills">
+          <div class="skill"><i class="devicon-shopify-plain colored"></i>Shopify</div>
+          <div class="skill"><i class="devicon-wordpress-plain colored"></i>WordPress</div>
+          <div class="skill"><i class="devicon-vscode-plain colored"></i>VS Code</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    © 2025 <span>Krishna Rajak</span> — Built with ❤️ using clean code.
+  </footer>
+</body>
+</html>
