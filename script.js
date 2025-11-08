@@ -80,9 +80,29 @@ const sr = ScrollReveal({
   reset: false
 });
 
+
+/*------Iss se mobile hamburger perfectly kaam karega (open/close animation ke saath)-------***/
+
 sr.reveal(".fade-bottom", { origin: "bottom", interval: 150 });
 sr.reveal(".fade-left", { origin: "left", interval: 150 });
 sr.reveal(".fade-right", { origin: "right", interval: 150 });
 
 
+});
+
+const hamburger = document.getElementById("hamburger");
+const mobileMenu = document.getElementById("mobileMenu");
+
+hamburger.addEventListener("click", () => {
+  mobileMenu.classList.toggle("active");
+  // toggle hamburger icon
+  hamburger.textContent = mobileMenu.classList.contains("active") ? "✕" : "☰";
+});
+
+// Close mobile menu when a link is clicked
+document.querySelectorAll(".mobile-menu a").forEach(link => {
+  link.addEventListener("click", () => {
+    mobileMenu.classList.remove("active");
+    hamburger.textContent = "☰";
+  });
 });
