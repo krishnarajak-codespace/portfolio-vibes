@@ -1,181 +1,428 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Krishna Rajak | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <!-- ScrollReveal Animation -->
-  <script src="https://unpkg.com/scrollreveal"></script>
-</head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Krishna Rajak — Full-Stack Web Developer. React, Node.js, Shopify, WordPress & SEO expert." />
+  <title>Krishna Rajak | Full-Stack Developer</title>
 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
 
- <!-- ===== HEADER / NAVBAR ===== -->
-<nav class="navbar">
-  <div class="logo">KR</div>
+  <!-- ═══ CURSOR ═══ -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
 
-  <ul class="nav-links" id="navLinks">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="work.html">Work</a></li>
-  </ul>
-
-  <a href="CV_2.pdf" class="resume-btn">Resume</a>
-
-  <div class="hamburger" id="hamburger">
-    ☰
+  <!-- ═══ LOADER ═══ -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-text">KR<span class="loader-dot">.</span></div>
   </div>
-</nav>
 
-<div class="mobile-menu" id="mobileMenu">
-  <a href="#home">Home</a>
-  <a href="#about">About</a>
-  <a href="#projects">Projects</a>
-  <a href="#contact">Contact</a>
-  <a href="work.html">Work</a>
-</div>
+  <!-- ═══ NAVBAR ═══ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-icon">KR</span>
+        <span class="logo-text">Krishna Rajak</span>
+      </a>
 
-  <!-- ===== MAIN CONTENT ===== -->
-  <main>
-    <!-- ===== HOME SECTION ===== -->
-    <section id="home" class="section hero">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <p class="eyebrow">Hey, I'm <strong>Krishna Rajak</strong></p>
-          <h1 class="hero-title">
-            I build modern web experiences<br>
-            <span class="typed">Front-end • Web Apps • E-commerce</span>
-          </h1>
-          <p class="hero-desc">
-            Passionate Web Developer — building responsive, accessible, and performant websites.
-          </p>
-          <div class="hero-cta">
-            <a href="#projects" class="btn primary">View Projects</a>
-            <a href="#contact" class="btn ghost">Get in Touch</a>
-          </div>
-        </div>
+      <nav class="nav-menu" id="navMenu">
+        <a href="#about"      class="nav-item" data-text="About">About</a>
+        <a href="#skills"     class="nav-item" data-text="Skills">Skills</a>
+        <a href="#experience" class="nav-item" data-text="Experience">Experience</a>
+        <a href="#projects"   class="nav-item" data-text="Projects">Projects</a>
+        <a href="#contact"    class="nav-item" data-text="Contact">Contact</a>
+        <a href="Krishna_Rajak_Resume.pdf" target="_blank" class="nav-cta">
+          <i class="fas fa-download"></i> Resume
+        </a>
+      </nav>
 
-        <div class="hero-image">
-          <div class="image-frame">
-            <img src="passporstsizephot.jpeg" alt="Krishna Rajak">
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-    <!-- ===== ABOUT SECTION ===== -->
-    <section id="about" class="section about">
-      <h1>Overview.</h1>
-      <p>
-        I'm <strong>Krishna Rajak</strong>, a passionate Web Developer with a strong foundation in
-        <strong>HTML, CSS, and JavaScript</strong>.
-        I specialize in building clean, responsive, and modern websites that deliver seamless user experiences.
-        I’ve worked on projects like an <strong>E-commerce site</strong>, <strong>Temperature Converter</strong>, and
-        <strong>Basic Calculator</strong>.
-        I’m constantly learning and aim to become a <strong>Full-Stack Web Developer</strong> soon.
-      </p>
-
-      <div class="skills-grid">
-        <div class="skill-card">
-          <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Frontend">
-          <h3>Frontend Developer</h3>
-          <p>Expertise in creating responsive and visually appealing interfaces using HTML, CSS, and JS.</p>
-        </div>
-
-        <div class="skill-card">
-          <img src="https://cdn-icons-png.flaticon.com/512/2721/2721296.png" alt="E-commerce">
-          <h3>Wordpress/ Shopify(E-commerce) Developer</h3>
-          <p>Developed a fully functional online store with modern layout, product listings, and responsive design.</p>
-        </div>
-
-        <div class="skill-card">
-          <img src="https://cdn-icons-png.flaticon.com/512/3291/3291667.png" alt="Teacher">
-          <h3>Professional Teacher</h3>
-          <p>2 years of experience in teaching school students with a focus on logical and conceptual learning.</p>
-        </div>
-      </div>
-    </section>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+  </header>
 
-    <!-- ===== PROJECTS SECTION ===== -->
-    <section id="projects" class="section projects">
+  <!-- ═══ MOBILE MENU ═══ -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about"      class="m-link">About</a>
+    <a href="#skills"     class="m-link">Skills</a>
+    <a href="#experience" class="m-link">Experience</a>
+    <a href="#projects"   class="m-link">Projects</a>
+    <a href="#contact"    class="m-link">Contact</a>
+    <a href="Krishna_Rajak_Resume.pdf" target="_blank" class="m-link m-cta">Download Resume</a>
+  </div>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════
+         SECTION 1 — HERO
+    ════════════════════════════════════════════ -->
+    <section id="hero" class="hero">
+      <!-- Background decoration -->
+      <div class="hero-bg">
+        <div class="bg-blob blob-1"></div>
+        <div class="bg-blob blob-2"></div>
+        <div class="bg-blob blob-3"></div>
+        <div class="bg-grid"></div>
+      </div>
+
+      <div class="hero-container">
+
+        <!-- LEFT ── Copy -->
+        <div class="hero-left">
+          <div class="hero-badge" data-aos="fade-up" data-aos-delay="0">
+            <span class="badge-pulse"></span>
+            Open to opportunities
+          </div>
+
+          <h1 class="hero-heading" data-aos="fade-up" data-aos-delay="100">
+            Hi, I'm <span class="highlight">Krishna</span><br/>
+            Full-Stack<br/>
+            <span class="typewriter-wrap">
+              <span class="typewriter" id="typewriter"></span><span class="type-cursor">|</span>
+            </span>
+          </h1>
+
+          <p class="hero-desc" data-aos="fade-up" data-aos-delay="200">
+            I build <strong>modern web experiences</strong> from pixel-perfect frontends to
+            robust backend systems. Specialising in React, Node.js, Shopify & WordPress
+            with a data-driven approach to SEO and growth.
+          </p>
+
+          <div class="hero-actions" data-aos="fade-up" data-aos-delay="300">
+            <a href="#projects" class="btn btn-primary">
+              View Projects <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-outline">Let's Connect</a>
+          </div>
+
+          <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+            <div class="stat">
+              <span class="stat-num" data-count="4">0</span><span>+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-num" data-count="2">0</span>
+              <span class="stat-label">Internships</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-num">7.5</span>
+              <span class="stat-label">CGPA</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT ── Photo -->
+        <div class="hero-right" data-aos="zoom-in" data-aos-delay="200">
+          <div class="photo-section">
+            <!-- Rotating dashed border -->
+            <div class="photo-deco deco-outer"></div>
+            <div class="photo-deco deco-mid"></div>
+            <!-- Glow background -->
+            <div class="photo-glow"></div>
+            <!-- Actual image circle -->
+            <div class="photo-frame">
+              <img
+                src="ChatGPT Image Jun 19, 2026, 12_57_39 PM.png"
+                alt="Krishna Rajak — Full-Stack Developer"
+                class="profile-img"
+                id="profileImg"
+                onerror="this.onerror=null;this.src='profile.jpg';"
+              />
+            </div>
+            <!-- Tech orbit badges -->
+            <div class="orbit-badge ob-1">
+              <i class="devicon-react-original" style="color:#61DAFB;"></i>
+              React
+            </div>
+            <div class="orbit-badge ob-2">
+              <i class="devicon-nodejs-plain" style="color:#339933;"></i>
+              Node.js
+            </div>
+            <div class="orbit-badge ob-3">
+              <i class="devicon-shopify-plain" style="color:#96BF48;"></i>
+              Shopify
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="scroll-down">
+        <div class="mouse"><div class="mouse-wheel"></div></div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         SECTION 2 — ABOUT
+    ════════════════════════════════════════════ -->
+    <section id="about" class="section about-section">
       <div class="container">
-        <h2>Projects</h2>
-        <div class="project-grid">
-          <div class="project-card">
-            <h3>Personal Portfolio site </h3>
-            <p>Crafted with HTML, CSS, JS, and love—this site reflects my journey as a web developer blending design and
-              code.</p>
-            <a href="https://krishnarajak-codespace.github.io/portfolio-vibes/" target="_blank" class="btn">View
-              Project</a>
+        <div class="about-grid">
+
+          <div class="about-left" data-aos="fade-right">
+            <div class="section-tag">About Me</div>
+            <h2 class="section-title">Building the web, <span class="highlight">one line at a time.</span></h2>
+            <p class="about-text">
+              I'm a <strong>B.Tech Computer Engineering</strong> graduate (CGPA 7.5) from
+              Vikrant Institute of Technology, Gwalior. I craft complete web solutions —
+              from beautiful, responsive UIs to powerful server-side APIs and e-commerce stores.
+            </p>
+            <p class="about-text">
+              My toolkit spans <strong>React, Node.js, TypeScript, Shopify, and WordPress</strong>
+              — backed by a sharp understanding of SEO and digital marketing.
+              I bring both the technical depth and the growth mindset.
+            </p>
+
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <i class="fas fa-graduation-cap"></i>
+                <div>
+                  <strong>B.Tech Computer Engineering</strong>
+                  <span>Vikrant Institute of Technology · 2020–2024</span>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <strong>Based in India</strong>
+                  <span>Available for remote & on-site work</span>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-circle-check" style="color:#10b981"></i>
+                <div>
+                  <strong>Open to Opportunities</strong>
+                  <span>Full-time, freelance & consulting</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-socials">
+              <a href="https://github.com/krishnarajak-codespace" target="_blank" rel="noreferrer" class="social-btn github">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/krishna-rajak" target="_blank" rel="noreferrer" class="social-btn linkedin">
+                <i class="fab fa-linkedin"></i> LinkedIn
+              </a>
+              <a href="mailto:rajakkrishna695@gmail.com" class="social-btn email">
+                <i class="fas fa-envelope"></i> Email
+              </a>
+            </div>
           </div>
-          <div class="project-card">
-            <h3>Basic Calculator</h3>
-            <p>Performs all basic arithmetic operations with style.</p>
-            <a href="https://krishnarajak-codespace.github.io/basic-calculator-project/" target="_blank" class="btn">View
-              Project</a>
-              <div class="project-card">
-            <h3>E-commerce Website</h3>
-            <p>A modern and fully responsive shopping platform.</p>
+
+          <div class="about-right" data-aos="fade-left">
+            <div class="bento-grid">
+              <div class="bento-card bento-big">
+                <div class="bento-icon">🚀</div>
+                <div class="bento-num counter" data-count="4">0</div>
+                <div class="bento-label">Projects Built</div>
+              </div>
+              <div class="bento-card">
+                <div class="bento-icon">🎓</div>
+                <div class="bento-num">7.5</div>
+                <div class="bento-label">CGPA / 10</div>
+              </div>
+              <div class="bento-card">
+                <div class="bento-icon">💼</div>
+                <div class="bento-num counter" data-count="2">0</div>
+                <div class="bento-label">Internships</div>
+              </div>
+              <div class="bento-card bento-wide">
+                <div class="bento-icon">🛠️</div>
+                <div class="bento-num counter" data-count="18">0</div>
+                <div class="bento-label">Technologies</div>
+              </div>
+              <div class="bento-card bento-tall">
+                <div class="bento-icon">📜</div>
+                <div class="bento-num counter" data-count="6">0</div>
+                <div class="bento-label">Certifications</div>
+              </div>
+              <div class="bento-card">
+                <div class="bento-icon">📅</div>
+                <div class="bento-num">2024</div>
+                <div class="bento-label">B.Tech Grad</div>
+              </div>
+            </div>
           </div>
-          </div>
+
         </div>
       </div>
     </section>
 
-    <!-- ===== CONTACT SECTION ===== -->
-    <section id="contact" class="section contact">
+    <!-- ═══════════════════════════════════════
+         SECTION 3 — SKILLS
+    ════════════════════════════════════════════ -->
+    <section id="skills" class="section skills-section">
       <div class="container">
-        <h2>Get in Touch</h2>
-        <p>Let's connect and discuss your next big idea 🚀</p>
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-tag">Tech Stack</div>
+          <h2 class="section-title">Tools & Technologies</h2>
+          <p class="section-sub">Every technology I actively use in real projects.</p>
+        </div>
+      </div>
 
-        <form action="https://formspree.io/f/xyzbbbnv" method="POST">
-          <div class="form-group">
-            <input type="text" name="name" placeholder="Your Name" required />
-          </div>
-          <div class="form-group">
-            <input type="email" name="email" placeholder="Your Email" required />
-          </div>
-          <div class="form-group">
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-          </div>
-          <button type="submit" class="btn send-btn">Send Message</button>
-        </form>
+      <!-- Infinite scroll rows -->
+      <div class="skills-ticker-wrap">
+        <div class="skills-ticker ticker-fwd" id="ticker1"></div>
+      </div>
+      <div class="skills-ticker-wrap" style="margin-top:16px;">
+        <div class="skills-ticker ticker-rev" id="ticker2"></div>
+      </div>
+
+      <!-- Category grid -->
+      <div class="container">
+        <div class="skill-cats" id="skillCats" data-aos="fade-up" data-aos-delay="200"></div>
       </div>
     </section>
+
+    <!-- ═══════════════════════════════════════
+         SECTION 4 — EXPERIENCE
+    ════════════════════════════════════════════ -->
+    <section id="experience" class="section exp-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-tag">Career</div>
+          <h2 class="section-title">Work Experience</h2>
+        </div>
+
+        <div class="timeline" id="expTimeline"></div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         SECTION 5 — PROJECTS
+    ════════════════════════════════════════════ -->
+    <section id="projects" class="section proj-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-tag">Portfolio</div>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-sub">Real production sites & tools I've built and shipped.</p>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         SECTION 6 — EDUCATION + CERTS
+    ════════════════════════════════════════════ -->
+    <section class="section edu-section">
+      <div class="container">
+        <div class="edu-flex" data-aos="fade-up">
+          <div class="edu-card-main">
+            <div class="edu-icon-wrap"><i class="fas fa-graduation-cap"></i></div>
+            <div class="edu-info">
+              <div class="section-tag">Education</div>
+              <h3>B.Tech — Computer Engineering</h3>
+              <p>Vikrant Institute of Technology, Gwalior &nbsp;·&nbsp; 2020–2024 &nbsp;·&nbsp; <strong>CGPA 7.5/10</strong></p>
+            </div>
+          </div>
+
+          <div class="certs-list" id="certsList"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         SECTION 7 — CONTACT
+    ════════════════════════════════════════════ -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="contact-wrap" data-aos="fade-up">
+
+          <div class="contact-left">
+            <div class="section-tag">Contact</div>
+            <h2 class="section-title">Let's Build<br/><span class="highlight">Something Great.</span></h2>
+            <p class="contact-text">
+              Available for freelance projects, full-time roles, and exciting collaborations.
+              Drop a message and I'll respond within 24 hours.
+            </p>
+
+            <ul class="contact-list">
+              <li>
+                <div class="c-icon"><i class="fas fa-envelope"></i></div>
+                <a href="mailto:rajakkrishna695@gmail.com">rajakkrishna695@gmail.com</a>
+              </li>
+              <li>
+                <div class="c-icon"><i class="fas fa-phone"></i></div>
+                <a href="tel:+918817042891">+91 88170 42891</a>
+              </li>
+              <li>
+                <div class="c-icon"><i class="fab fa-linkedin"></i></div>
+                <a href="https://linkedin.com/in/krishna-rajak" target="_blank" rel="noreferrer">linkedin.com/in/krishna-rajak</a>
+              </li>
+              <li>
+                <div class="c-icon"><i class="fab fa-github"></i></div>
+                <a href="https://github.com/krishnarajak-codespace" target="_blank" rel="noreferrer">github.com/krishnarajak-codespace</a>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="f-row">
+              <div class="f-group">
+                <label for="cname">Full Name</label>
+                <input id="cname" name="name" type="text" placeholder="John Doe" required />
+              </div>
+              <div class="f-group">
+                <label for="cemail">Email</label>
+                <input id="cemail" name="email" type="email" placeholder="john@email.com" required />
+              </div>
+            </div>
+            <div class="f-group">
+              <label for="csubject">Subject</label>
+              <input id="csubject" name="subject" type="text" placeholder="Project Inquiry" />
+            </div>
+            <div class="f-group">
+              <label for="cmsg">Message</label>
+              <textarea id="cmsg" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+              Send Message <i class="fas fa-paper-plane"></i>
+            </button>
+            <p class="f-status" id="fStatus" role="status"></p>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
   </main>
 
-
-  <!-- ===== FOOTER ===== -->
-  <section class="social-section">
-    <h2>Connect with Me</h2>
-    <div class="social-icons">
-      <a href="https://github.com/krishnarajak-codespace" target="_blank" aria-label="GitHub">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/krishna-rajak-579a52236" target="_blank" aria-label="LinkedIn">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="https://wa.me/918817042891" target="_blank" aria-label="WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-      </a>
-      <a href="https://www.instagram.com/krishna._2001/" target="_blank" aria-label="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="footer-name">Krishna Rajak</span>
+      <span class="footer-copy">Crafted with HTML, CSS & JavaScript · 2024</span>
+      <div class="footer-links">
+        <a href="https://github.com/krishnarajak-codespace" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/krishna-rajak" target="_blank" rel="noreferrer"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:rajakkrishna695@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
     </div>
-  </section>
-  <footer>
-    <p>© 2025 Krishna Rajak. All rights reserved.</p>
   </footer>
 
+  <!-- Back to top -->
+  <button class="btt" id="btt" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="data.js"></script>
   <script src="script.js"></script>
 </body>
-
 </html>
